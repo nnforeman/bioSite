@@ -1,2 +1,4 @@
-# bioSite
-Project for CSD-340 Web Development
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+- Pravin Bhandari
+- Natasha Foreman
