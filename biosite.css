@@ -19,9 +19,59 @@ nav a:hover { background-color: var(--navHover); color: var(--ink2); }
 .card-content { padding: 2px 16px 20px; }
 .card:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); }
 
-footer { background-color: var(--brand); position: absolute; bottom: 0; width: 100%; }
+footer {
+  background-color: var(--brand);
+  width: 100%;
+  text-align: center;
+  padding: 35px 0;
+  margin-top: 40px;}
+
 footer p { color: var(--ink); font-weight: 400; float: right; padding-right: 10px; font-style: italic; margin: 10px 0; }
 footer a { text-decoration: none; color: var(--ink); }
 footer a:hover { text-decoration: underline; }
 
 @media (max-width: 900px) { .card { width: 90%; } nav a { float:none; display:inline-block; } }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 24px auto;
+  max-width: 1100px;}
+
+.tile {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  overflow: hidden;}
+
+.tile img {
+  display: block;
+  width: 100%;
+  height: auto;}
+
+.tile figcaption {
+  padding: 12px 14px 16px;
+  font-size: 0.95rem;}
+
+.portrait {
+  display: block;
+  max-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  margin: 0 auto 16px;}
+
+.qa {
+  margin-top: 8px;}
+
+.qa dt {
+  font-weight: 600;
+  margin-top: 12px;
+  color: var(--brand);}
+
+.qa dd {
+  margin: 6px 0 10px 0;}
+
+@media (max-width: 900px) {
+  .gallery { grid-template-columns: 1fr; }}
+
